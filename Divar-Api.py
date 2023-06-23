@@ -6,7 +6,7 @@ YourToken = 'Basic ' ## Enter your token from Cookies below
 
 
 class Divar:
-    def __init__(self, city="tehran", category="clothing", cnt=10):
+    def __init__(self, city="tehran", category="real-estate", cnt=10):
         self.city = city
         self.category = category
         self.pro_cnt = cnt
@@ -66,8 +66,5 @@ divar = Divar("mashhad", cnt=20)
 for product in divar.main():
     number = divar.extract_number(product["token"])
     print(number)
-
-
-
 
 
